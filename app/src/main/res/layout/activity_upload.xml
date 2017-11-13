@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="home"
+        android:text="Home"
+        android:layout_below="@+id/uploadMOT"
+        android:layout_alignLeft="@+id/buttonUpload"
+        android:layout_alignStart="@+id/buttonUpload" />
+
+    <EditText
+        android:id="@+id/uploadColour"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadType"
+        android:layout_alignStart="@+id/uploadType"
+        android:layout_below="@+id/uploadType"
+        android:ems="10"
+        android:hint="Colour"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/uploadType"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadModel"
+        android:layout_alignStart="@+id/uploadModel"
+        android:layout_below="@+id/uploadModel"
+        android:ems="10"
+        android:hint="Vehicle Type"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/uploadReg"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Registration Number"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <requestFocus></requestFocus>
+
+
+    <EditText
+        android:id="@+id/uploadModel"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadMake"
+        android:layout_alignStart="@+id/uploadMake"
+        android:layout_below="@+id/uploadMake"
+        android:ems="10"
+        android:hint="Model"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/uploadMake"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadReg"
+        android:layout_alignStart="@+id/uploadReg"
+        android:layout_below="@+id/uploadReg"
+        android:ems="10"
+        android:hint="Make"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Enter"
+        android:onClick="OnReg"/>
+
+    <EditText
+        android:id="@+id/uploadInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uploadColour"
+        android:layout_alignLeft="@+id/uploadColour"
+        android:layout_alignRight="@+id/uploadColour"
+        android:layout_alignStart="@+id/uploadColour"
+        android:layout_below="@+id/uploadColour"
+        android:ems="10"
+        android:hint="Insurance"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/uploadTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uploadInsurance"
+        android:layout_alignLeft="@+id/uploadInsurance"
+        android:layout_alignRight="@+id/uploadInsurance"
+        android:layout_alignStart="@+id/uploadInsurance"
+        android:layout_below="@+id/uploadInsurance"
+        android:ems="10"
+        android:hint="Tax"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/uploadMOT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uploadTax"
+        android:layout_alignLeft="@+id/uploadTax"
+        android:layout_alignRight="@+id/uploadTax"
+        android:layout_alignStart="@+id/uploadTax"
+        android:layout_below="@+id/uploadTax"
+        android:ems="10"
+        android:hint="MOT"
+        android:inputType="date" />
+
+</RelativeLayout>
